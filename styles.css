@@ -1,0 +1,75 @@
+/* Estilos generales para el contenedor */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    background-color: #f0951f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Estilos para los labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #090f0f;
+    margin-bottom: 5px;
+}
+
+/* Estilos para los inputs y selects */
+input[type="text"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #010202;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="date"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Botón guardar */
+.btn-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-guardar {
+    background-color: #1fb819;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-guardar:hover {
+    background-color: #388e8e;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Titulación</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Aumenta el ancho máximo del contenedor */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            background-color: #4cafab;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .input-group {
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow-x: auto; /* Asegura el desplazamiento horizontal si es necesario */
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos adicionales para tablas largas */
+        .table-container {
+            overflow-x: auto; /* Permite el desplazamiento horizontal para tablas amplias */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Consulta por Número de Control</h2>
+        <div class="input-group">
+            <label for="numControl">Escribe el No. Control</label>
+            <input type="text" id="numControl" placeholder="Escribe el No. Control">
+        </div>
+
+        <h2>Consulta por Opción de Titulación</h2>
+        <div class="input-group">
+            <label for="opcionTitulacion">Selecciona Opción de Titulación</label>
+            <select id="opcionTitulacion">
+                <option value="integral">Titulación Integral</option>
+                <option value="memoriaResidencias">Titulación Integral (Memoria de Residencias Profesionales)</option>
+                <option value="ceneval">Titulación Integral (CENEVAL)</option>
+                <option value="tesis">Titulación Integral (Tesis)</option>
+            </select>
+        </div>
+
+        <h2>Consulta por Estatus</h2>
+        <div class="input-group">
+            <label for="estatus">Selecciona Estatus</label>
+            <select id="estatus">
+                <option value="0">Espera de Documentos</option>
+                <option value="1">Realizar Oficio de Aprobación</option>
+                <option value="2">Oficio de Aprobación Entregado</option>
+                <option value="3">Oficio de no Inconveniencia Recibido</option>
+                <option value="4">Realizando Oficio Aviso de Acto Recepcional</option>
+                <option value="5">Envío de Aviso de Acto Recepcional a Egresado y Jurado</option>
+                <option value="6">TITULADO</option>
+            </select>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No. Control</th>
+                        <th>Nombre Egresado</th>
+                        <th>Especialidad</th>
+                        <th>Estatus</th>
+                        <th>Nombre del Proyecto</th>
+                        <th>Opción de Titulación</th>
+                        <th>Asesor</th>
+                        <th>Secretario</th>
+                        <th>Vocal</th>
+                        <th>Suplente</th>
+                        <th>Fecha de Titulación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se llenarán los resultados filtrados -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

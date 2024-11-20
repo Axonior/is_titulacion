@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Solicitud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Modificar Solicitud</h2>
+
+        <div class="input-group">
+            <label for="numControl">Número de Control</label>
+            <input type="text" id="numControl" placeholder="Escribe el No. Control">
+        </div>
+
+        <div class="input-group">
+            <label for="nombreEgresado">Nombre del Egresado</label>
+            <input type="text" id="nombreEgresado" placeholder="Escribe el nombre del egresado">
+        </div>
+
+        <div class="input-group">
+            <label for="especialidad">Especialidad</label>
+            <input type="text" id="especialidad" placeholder="Escribe la especialidad">
+        </div>
+
+        <div class="input-group">
+            <label for="estatus">Estatus</label>
+            <select id="estatus">
+                <option value="0">Espera de documentos</option>
+                <option value="1">Realizar Oficio de Aprobación</option>
+                <option value="2">Oficio de Aprobación Entregado</option>
+                <option value="3">Oficio de no Inconveniencia Recibido</option>
+                <option value="4">Realizando Oficio Aviso de Acto Recepcional</option>
+                <option value="5">Envío de Aviso de Acto Recepcional</option>
+                <option value="6">TITULADO</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="nombreProyecto">Nombre del Proyecto</label>
+            <input type="text" id="nombreProyecto" placeholder="Escribe el nombre del proyecto">
+        </div>
+
+        <div class="input-group">
+            <label for="opcionTitulacion">Opción de Titulación</label>
+            <select id="opcionTitulacion">
+                <option value="integral">Titulación Integral</option>
+                <option value="memoriaResidencias">Titulación Integral (Memoria de Residencias Profesionales)</option>
+                <option value="ceneval">Titulación Integral (CENEVAL)</option>
+                <option value="tesis">Titulación Integral (Tesis)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="nombreAsesor">Nombre del Asesor</label>
+            <input type="text" id="nombreAsesor" placeholder="Escribe el nombre del asesor">
+        </div>
+
+        <div class="input-group">
+            <label for="nombreSecretario">Nombre del Secretario</label>
+            <input type="text" id="nombreSecretario" placeholder="Escribe el nombre del secretario">
+        </div>
+
+        <div class="input-group">
+            <label for="nombreVocal">Nombre del Vocal</label>
+            <input type="text" id="nombreVocal" placeholder="Escribe el nombre del vocal">
+        </div>
+
+        <div class="input-group">
+            <label for="nombreSuplente">Nombre del Suplente</label>
+            <input type="text" id="nombreSuplente" placeholder="Escribe el nombre del suplente">
+        </div>
+
+        <div class="input-group">
+            <label for="fechaTitulacion">Fecha de Titulación</label>
+            <input type="date" id="fechaTitulacion">
+        </div>
+
+        <div class="btn-container">
+            <button class="btn-guardar">Guardar</button>
+        </div>
+    </div>
+</body>
+</html>
