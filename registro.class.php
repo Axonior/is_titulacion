@@ -47,4 +47,37 @@ class registro extends Sistema {
         $result = $insert->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
+
+    function readOne($numero_control) {
+        $this -> conexion();
+        $sql = "SELECT * FROM registro WHERE no_control = :numControl";
+        $select = $this->con->prepare($sql);
+        $select->bindParam(':numControl', $numero_control);
+        $select->execute();
+        $result = $select->fetch(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+
+    function update($data) {
+        $this -> conexion();
+        $sql = "UPDATE registro set nombre=:nombre, especialidad=:especialidad, estatus=:estatus, nombre_proyecto=:nombre_proyecto, id_opcion=:id_opcion, asesor=:asesor, secretario=:secretario, vocal=:vocal, suplente=:suplente, fecha_examen=:fecha_examen
+                where no_control = :no_control";
+        $modificar = $this->con->prepare($sql);
+        $modificar->bindParam(':no_control', $data['no_control'], PDO::PARAM_STR);
+        $modificar->bindParam(':nombre', $data['nombreEgresado'], PDO::PARAM_STR);
+        $modificar->bindParam(':especialidad', $data['especialidad']);
+        $modificar->bindParam(':nombre_proyecto', $data['nombre_proyecto']);
+        $modificar->bindParam(':estatus', $data['estatus']);
+        $modificar->bindParam(':id_opcion', $data['id_opcion']);
+        $modificar->bindParam(':asesor', $data['asesor']);
+        $modificar->bindParam(':secretario', $data['secretario']);
+        $modificar->bindParam(':vocal', $data['vocal']);
+        $modificar->bindParam(':suplente', $data['suplente']);
+        $modificar->bindParam(':fecha_examen', $data['fecha']);
+        $modificar->execute();
+
+        $result = $modificar->fetch(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }

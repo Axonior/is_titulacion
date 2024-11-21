@@ -59,10 +59,12 @@
 <!-- Sección de Botones en Fila para Pantallas Grandes y Columna en Pantallas Pequeñas -->
 <div class="container mt-3 d-flex flex-column flex-md-row justify-content-center gap-3">
     <a href="nueva_solicitud.php" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #28a745;">Nueva Solicitud</a>
+    <a href="modificar_egresado.php" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #fd7e14;">Modificar Egresado</a>
+</div>
+<div class="container mt-3 d-flex flex-column flex-md-row justify-content-center gap-3">
     <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #007bff;"></a>
     <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #17a2b8;"></a>
     <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #0056b3;"></a>
-    <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #fd7e14;"></a>
 </div>
 
 <!-- Estilos para el hover -->

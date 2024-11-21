@@ -59,12 +59,12 @@
 
         try {
             $data = $_POST;
-            $insertar = $app -> create($data);
+            $modificar = $app -> update($data);
 
-            echo "<p class='result-item'>Los datos se han guardado <span class='label'>exitosamente</span>.</p>";
+            echo "<p class='result-item'>Los datos se han modificado <span class='label'>exitosamente</span>.</p>";
             echo "<p class='result-item'>Serás redirigido en breve.</p>";
         } catch (PDOException $e) {
-            echo "<p class='result-item text-danger'>Error al guardar los datos: " . $e->getMessage() . "</p>";
+            echo "<p class='result-item text-danger'>Error al modificar los datos: " . $e->getMessage() . "</p>";
         } catch (Exception $e) {
             echo "<p class='result-item text-danger'>Error: " . $e->getMessage() . "</p>";
         }
