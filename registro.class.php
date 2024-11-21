@@ -80,4 +80,15 @@ class registro extends Sistema {
         $result = $modificar->fetch(PDO::FETCH_ASSOC);
         return $result;
     }
+
+
+    function readByEstatus($estatus) {
+        $this -> conexion();
+        $sql = "SELECT * FROM registro WHERE estatus = :estatus";
+        $select = $this->con->prepare($sql);
+        $select->bindParam(':estatus', $estatus);
+        $select->execute();
+        $result = $select->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
+    }
 }

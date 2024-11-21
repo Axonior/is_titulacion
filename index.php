@@ -41,6 +41,13 @@
         }
     </style>
 
+    <!-- Estilos para el hover -->
+    <style>
+        .btn-hover:hover {
+            filter: brightness(0.9);
+        }
+    </style>
+
 </head>
 
 <body>
@@ -62,17 +69,10 @@
     <a href="modificar_egresado.php" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #fd7e14;">Modificar Egresado</a>
 </div>
 <div class="container mt-3 d-flex flex-column flex-md-row justify-content-center gap-3">
+    <a href="consulta_estatus.php" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #0056b3;">Consulta por Estatus</a>
     <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #007bff;"></a>
     <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #17a2b8;"></a>
-    <a href="#" class="btn rounded-pill p-3 flex-fill btn-hover" style="color:white; font-weight: bolder; font-size: 25px; background-color: #0056b3;"></a>
 </div>
-
-<!-- Estilos para el hover -->
-<style>
-    .btn-hover:hover {
-        filter: brightness(0.9);
-    }
-</style>
 
 <!-- Placeholder para contenido adicional -->
 <div class="container mt-4">
