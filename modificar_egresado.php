@@ -42,7 +42,7 @@
             <div class="row form-group align-items-center p-2">
                 <label for="control" class="col-sm-4 ">Número de Control</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="control" value="21014012" disabled>
+                    <input type="text" class="form-control" id="control" value="21014012">
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
             <div class="row form-group align-items-center p-2">
                 <label for="especialidad" class="col-sm-4 ">Especialidad</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="especialidad" value="ISC" disabled>
+                    <input type="text" class="form-control" id="especialidad" value="ISC">
                 </div>
             </div>
 
@@ -67,9 +67,13 @@
                 <label for="estatus" class="col-sm-4 ">Estatus</label>
                 <div class="col-sm-8">
                     <select class="form-select" id="estatus">
-                        <option>1. Pendiente</option>
-                        <option>2. En Proceso</option>
-                        <option selected>3. Oficio de no Inconven...</option>
+                        <option>0. Espera de documentos</option>
+                        <option>1. Realizar Oficio de Aprobación</option>
+                        <option>2. Oficio de Aprobación entregado</option>
+                        <option>3. Oficio de no Inconveniencia Recibido</option>
+                        <option>4. Realizando Oficio Acto Recepcional</option>
+                        <option>5. Envío de Aviso de Acto Recepcional a Egresado y Jurado</option>
+                        <option>6. TITULADO</option>
                     </select>
                 </div>
             </div>
@@ -87,9 +91,10 @@
                 <label for="titulacion" class="col-sm-4 ">Titulación</label>
                 <div class="col-sm-8">
                     <select class="form-select" id="titulacion">
-                        <option selected>TITULACIÓN INTEGRAL</option>
-                        <option>TESIS</option>
-                        <option>EXAMEN GENERAL</option>
+                        <option>TITULACIÓN INTEGRAL</option>
+                        <option>TITULACIÓN INTEGRAL (Memoria de Residencias Profesionales)</option>
+                        <option>TITULACIÓN INTEGRAL (CENEVAL)</option>
+                        <option>TITULACIÓN INTEGRAL (TESIS)</option>
                     </select>
                 </div>
             </div>
@@ -130,7 +135,7 @@
             <div class="row form-group align-items-center p-2">
                 <label for="fecha" class="col-sm-4 ">Fecha de Titulación</label>
                 <div class="col-sm-8">
-                    <input type="date" class="form-control" id="fecha" value="2020-05-01" disabled>
+                    <input type="date" class="form-control" id="fecha" value="2020-05-01">
                 </div>
             </div>
 
